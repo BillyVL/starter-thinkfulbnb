@@ -25,13 +25,14 @@ section {
   padding: 20px;
 }
 
+
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -48,7 +49,10 @@ main img {
 
 .item-double {
   flex: 2;
+  align-self: center;
 }
+
+
 
 /* -------  Navigation ------- */
 
@@ -62,6 +66,12 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  justify-content:center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center
 }
 
 header nav ul li {
@@ -77,6 +87,11 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
+}
+
+.navBar{
+  align-self: center;
+  justify-content: right;
 }
 
 /* -------  Search Form ------- */
@@ -104,6 +119,14 @@ form button {
   width: 100%;
 }
 
+.form-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+
 /* -------  Footer ------- */
 
 footer {
@@ -117,3 +140,18 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 481px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .group{
+    flex-direction: row;
+  }
+}
