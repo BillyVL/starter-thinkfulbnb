@@ -40,16 +40,26 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
+
 }
 
 .item-double {
   flex: 2;
   align-self: center;
+}
+
+.margin{
+  flex: 1;
+  margin: 10px;
+}
+
+.type{
+  margin-right: 10px;
 }
 
 
@@ -141,7 +151,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 481px) {
+@media all and (min-width: 935px) {
   header {
     display: flex;
     justify-content: space-between;
